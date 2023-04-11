@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: 'Green Energy', sans-serif;
+    src: url('C:\Users\Janah Rose\source\repos\Monster-Gym\fonts');
+}
+
+body {
+    color: rgba(255, 255, 255, 1);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    object-position: right;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 1);
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+}
+
+.navigation .btnSignIn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnSignIn:hover {
+    background:rgba(33, 68, 32, 1);
+    color: rgb(0, 0, 0);
+}
+
+.one {
+    background: url(barbbg.png) no-repeat;
+    background-size: cover;
+    height: 850px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.one-content {
+    font-family: 'Poppins';
+    max-width: 600px;
+}
+
+.one-content h1 {
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.83);
+    line-height: 1.25;
+}
+
+.one-content p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.83);
+    margin: 0 0 40px;
+}
+
+.one-content .button-box {
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    position: relative; 
+    left: 127px;
+}
+
+.button-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-size: 19px;
+    color: rgba(255, 255, 255, 1);;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.button-box a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.button-box a:nth-child(2) {
+    background: rgba(33, 68, 32, 1);
+    color: rgb(0, 0, 0);
+}
+
+.button-box a:nth-child(2):hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-box a:nth-child(2)::before {
+    background: rgb(0, 0, 0);
+}
+
+.button-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(33, 68, 32, 1);
+    z-index: -1;
+    transition: .5s;
+}
+
+.button-box a:hover:before {
+    width: 100%;
+}
+
+.two {
+    height: 100%;
+}
+
+.OC-container {
+    display: flex;
+    padding: .5%;
+}
+
+.col {
+    flex: 33.33%;
+    padding: 3%;
+}
+
+.three {
+    background: url(Group\ 17.png) no-repeat;
+    background-position: 1300px;
+    display: flex;
+    align-items: right;
+    padding: 5%;
+    margin-bottom: 100px;
+}
+
+.three-content {
+    background: transparent;
+    background-position: center;
+    margin-left: 130px;
+    max-width: 1000px;
+    font-family: 'Poppins';
+    color: rgb(0, 0, 0);
+   
+}
+
+.three-content h1 {
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+.three-content p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+}
+
+.four {
+    background: rgba(54, 62, 53, 1);
+}
+
+.four-content {
+    background: url(Group\ 18.png) no-repeat;
+    background-position: 90px;
+    height: 245px;
+}
+
+.four-content h1 {
+    color: rgba(255, 255, 255, 1);
+    margin-left: 350px;
+    position: absolute;
+    top: 1960px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.four-content #one {
+    max-width: 200px;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-left: 350px;
+    top: 2010px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.four-content h2 {
+    color: rgba(255, 255, 255, 1);
+    margin-left: 600px;
+    position: absolute;
+    top: 1960px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.four-content #two {
+    max-width: 200px;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-left: 600px;
+    top: 2010px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.four-content h3 {
+    color: rgba(255, 255, 255, 1);
+    margin-left: 1500px;
+    position: absolute;
+    top: 1960px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.four-content #three {
+    max-width: 200px;
+    background: transparent;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    margin-left: 1500px;
+    top: 2010px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+}
